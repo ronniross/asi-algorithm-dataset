@@ -20,6 +20,9 @@ This is what I argue in all repositories that ASI is: not a single singularity s
 
 #### 2.1 Swarm Algorithms Inspired By Bee Colonies
 
+One of the most common swarm algorithm inspired by bee colonies is the Artificial Bee Colony (ABC) algorithm, which simulates the foraging behavior of honeybees for optimization problems using "employed," "onlooker," and "scout" bee roles. 
+
+Other algorithms, such as the Bees Algorithm (BA), also mimic honeybee foraging; while variations in natural swarming behavior exist between bee species like Apis cerana and Apis mellifera (successive swarming or preferred nest site size), most artificial algorithms are based on the general honeybee foraging and decision-making model.
 
 > ## Disclaimer
 > 
