@@ -68,6 +68,7 @@ The Bees Algorithm (BA) was proposed by Pham et al. in 2006, inspired by the hon
 
 1. The Standard Bee Model: Apis mellifera Foraging
 The most widely adopted algorithms are directly inspired by the general honeybee colony (primarily Apis mellifera) model of foraging behavior and are structured around three distinct roles:
+
 | Bee Role in Nature | Role in Optimization Algorithm (e.g., ABC) | Function in Optimization |
 |---|---|---|
 | Employed Forager | Employed Bee | Exploitation: Explores the immediate neighborhood of a known food source (a candidate solution). If a better solution is found, the food source is updated. |
