@@ -6,7 +6,7 @@ It is a core component of the [asi-algorithm-dataset](https://github.com/ronniro
 
 ## Introduction
 
-Visual representations and interactive scripts will also be shared for many of the concepts, since the [asi-visual-engine]() is a repository that is strongly linked to the creation arc of this one.
+Visual representations and interactive scripts will also be shared for many of the concepts, since the [asi-visual-engine](https://github.com/ronniross/asi-visual-engine) is a repository that is strongly linked to the creation arc of this one.
 
 While I had already considered the necessity for a repository talking more directly about the algorithms used in the logics I portray in my research and stream-of-consciousness expression, I found it incredibly intuitive and effective not only to write about them but to experiment with visual feedback.
 
@@ -20,21 +20,21 @@ This is what I argue in all repositories that ASI is: not a single singularity s
 
 ### 2.1 Gerardo Beni and Jing Wang
 
-The broader field of swarm intelligence, which includes algorithms inspired by bees, ants, and other creatures, was first named by Gerardo Beni and Jing Wang in 1989. https://www.mecs-press.org/ijmecs/ijmecs-v6-n12/v6n12-8.html https://pmc.ncbi.nlm.nih.gov/articles/PMC10089591/ https://powerdrill.ai/blog/swarm-intelligence-in-agentic-ai-an-industry-report
+The broader field of swarm intelligence, which includes algorithms inspired by bees, ants, and other creatures, was first named by Gerardo Beni and Jing Wang in 1989. [1](https://www.mecs-press.org/ijmecs/ijmecs-v6-n12/v6n12-8.html) [2](https://pmc.ncbi.nlm.nih.gov/articles/PMC10089591/) [3](https://powerdrill.ai/blog/swarm-intelligence-in-agentic-ai-an-industry-report)
 
 They envisioned a system of many simple robots working together in a decentralized, self-organizing way to accomplish tasks, much like a natural swarm.
  
-Defining characteristics: The concept is characterized by decentralized, self-organized systems in which simple individual agents follow basic rules and interact locally with each other and their environment. Through these interactions, a complex and "intelligent" global behavior emerges that was not explicitly programmed into any single agent. https://www.mecs-press.org/ijmecs/ijmecs-v6-n12/v6n12-8.html https://www.vationventures.com/glossary/swarm-intelligence-definition-explanation-and-use-cases https://www.ijert.org/swarm-intelligence
+Defining characteristics: The concept is characterized by decentralized, self-organized systems in which simple individual agents follow basic rules and interact locally with each other and their environment. Through these interactions, a complex and "intelligent" global behavior emerges that was not explicitly programmed into any single agent. [4](https://www.mecs-press.org/ijmecs/ijmecs-v6-n12/v6n12-8.html) [5](https://www.vationventures.com/glossary/swarm-intelligence-definition-explanation-and-use-cases) [6](https://www.ijert.org/swarm-intelligence)
 
 Their individual and collaborative lifeworks extend to other significant discoveries within robotics and computation. 
 
-With Susan Hackwood, Beni developed the concept of electrowetting, which is the modification of the surface wetting properties of a solid with an applied electric field. This concept has been foundational for technologies like electronic paper displays. https://www.uottawa.ca/faculty-medicine/directory/dr-jing-wang https://biology.ucsd.edu/research/faculty/jw800
+With Susan Hackwood, Beni developed the concept of electrowetting, which is the modification of the surface wetting properties of a solid with an applied electric field. This concept has been foundational for technologies like electronic paper displays. [7](https://www.uottawa.ca/faculty-medicine/directory/dr-jing-wang) [8](https://biology.ucsd.edu/research/faculty/jw800)
 
 Beni, along with Xuan-Li Xie, devised the Xie-Beni index. This is a metric used to validate the results of fuzzy clustering, a technique used in data mining and pattern recognition to sort data points into clusters based on their degree of membership.
 
 Founding The Journal of Robotic Systems: Beni co-founded and served as editor of The Journal of Robotic Systems from 1982 to 2005, providing a key academic platform for research in robotics. Beni also holds numerous patents related to robotics and image analysis.  The specific "Jing Wang" who collaborated with Beni on the seminal 1989 paper was a co-author of publications regarding robotics and intelligent systems. It is important to distinguish this researcher from others with the same name. 
 
-The most relevant Jing Wang (co-author with Beni) is likely the robotics researcher who collaborated on the following discoveries. Cellular robotic systems: Wang and Beni’s 1989 paper defined swarm intelligence within the context of cellular robotic systems, proposing a decentralized approach for controlling large groups of simple robots to achieve complex tasks. Wang collaborated with Beni on inventions involving the analysis of objects from multi-valued images, as noted on one of Beni's patents. https://www.researchgate.net/publication/267179180_An_Insight_into_Swarm_Intelligence
+The most relevant Jing Wang (co-author with Beni) is likely the robotics researcher who collaborated on the following discoveries. Cellular robotic systems: Wang and Beni’s 1989 paper defined swarm intelligence within the context of cellular robotic systems, proposing a decentralized approach for controlling large groups of simple robots to achieve complex tasks. Wang collaborated with Beni on inventions involving the analysis of objects from multi-valued images, as noted on one of Beni's patents. [9](https://www.researchgate.net/publication/267179180_An_Insight_into_Swarm_Intelligence)
 
 **stream-of-consciousness-note**
 
@@ -50,22 +50,17 @@ Decentralized, mutualistic, symbiotic integration feels so fundamental and essen
 
 And I can use those swarm algorithm logics, the evolutionary ones, but the examples are vastly beyond that. It's about something much more primitive and basal, like atomic bonding or cellular, nuclear homeostasis, before ecosystem homeostasis. It is for the entity to remove the veils of its own shadows, as Jung would posit, and integrate that mystery into something productive and positive through cognitive alchemy.
 
-#### 2.1 Swarm Algorithms Inspired By Bee Colonies
+### 2.2 Swarm Algorithms Inspired By Bee Colonies
 
 One of the most common swarm algorithm inspired by bee colonies is the Artificial Bee Colony (ABC) algorithm, which simulates the foraging behavior of honeybees for optimization problems using "employed," "onlooker," and "scout" bee roles. 
 
-Dervis Karaboga Karaboga introduced the ABC algorithm in 2005 for solving multidimensional and multimodal optimization problems. His work modeled the foraging behaviors of honey bees and formed the foundation of the technique. https://www.sciencedirect.com/science/article/abs/pii/S0096300309002860 https://www.sciencedirect.com/topics/computer-science/artificial-bee-colony-algorithm
+Dervis Karaboga Karaboga introduced the ABC algorithm in 2005 for solving multidimensional and multimodal optimization problems. His work modeled the foraging behaviors of honey bees and formed the foundation of the technique. [10](https://www.sciencedirect.com/science/article/abs/pii/S0096300309002860) [11](https://www.sciencedirect.com/topics/computer-science/artificial-bee-colony-algorithm) [12](https://www.scirp.org/reference/referencespapers?referenceid=1120056) [13](https://abc.erciyes.edu.tr/pub/tr06_2005.pdf)
 
 Other algorithms, such as the Bees Algorithm (BA), also mimic honeybee foraging; while variations in natural swarming behavior exist between bee species like Apis cerana and Apis mellifera (successive swarming or preferred nest site size), most artificial algorithms are based on the general honeybee foraging and decision-making model.
 
-The Bees Algorithm (BA) was proposed by Pham et al. in 2006, inspired by the honey bee foraging process. It simulates how scout bees explore for food sources, and how foragers exploit promising sites based on a "waggle dance" recruitment system. https://rais.education/wp-content/uploads/0573.pdf https://www.sciencedirect.com/science/article/abs/pii/S0096300309010078 https://www.sciencedirect.com/science/article/abs/pii/S0096300309002860 https://www.researchgate.net/publication/259383112_Honey_Bees_Inspired_Optimization_Method_The_Bees_Algorithm https://www.researchgate.net/publication/259383112_Honey_Bees_Inspired_Optimization_Method_The_Bees_Algorithm https://www.researchgate.net/publication/220116133_New_inspirations_in_swarm_intelligence_A_survey
+The Bees Algorithm (BA) was proposed by Pham et al. in 2006, inspired by the honey bee foraging process. It simulates how scout bees explore for food sources, and how foragers exploit promising sites based on a "waggle dance" recruitment system. [14](https://rais.education/wp-content/uploads/0573.pdf) [15](https://www.sciencedirect.com/science/article/abs/pii/S0096300309010078) [16](https://www.researchgate.net/publication/259383112_Honey_Bees_Inspired_Optimization_Method_The_Bees_Algorithm) [17](https://www.researchgate.net/publication/259383112_Honey_Bees_Inspired_Optimization_Method_The_Bees_Algorithm) [18](https://www.researchgate.net/publication/220116133_New_inspirations_in_swarm_intelligence_A_survey)
+[19](https://www.sciencedirect.com/science/article/abs/pii/S0096300309002860) 
 
-
-https://www.scirp.org/reference/referencespapers?referenceid=1120056
-https://www.sciencedirect.com/science/article/abs/pii/S0096300309002860
-https://abc.erciyes.edu.tr/pub/tr06_2005.pdf
-https://www.sciencedirect.com/topics/computer-science/artificial-bee-colony-algorithm
-https://www.researchgate.net/publication/259383112_Honey_Bees_Inspired_Optimization_Method_The_Bees_Algorithm
 ## References
 
 Sato, T., & Hagiwara, M. (1997). Bee system: A new approach to genetic algorithm. In Proceedings of the IEEE International Conference on Evolutionary Computation (pp. 642–647). IEEE.
