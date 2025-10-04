@@ -75,7 +75,7 @@ The most widely adopted algorithms are directly inspired by the general honeybee
 
 The BCA is a prominent variant of BCO and was proposed in 2005 by Dervis Karaboga, a professor at Erciyes University in Turkey. He detailed the algorithm in a technical report for his work on optimizing numerical problems. [17](https://scholar.google.com/citations?user=aC77_cUAAAAJ&hl=en) [18](http://www.scholarpedia.org/article/Artificial_bee_colony_algorithm)
 
-The main difference is that Bee Colony Optimization (BCO) is a broader term for algorithms inspired by bee foraging, while the Artificial Bee Colony (ABC) algorithm is a specific, well-defined implementation with a clear division of labor among the bees. [19](https://www.sciencedirect.com/topics/mathematics/bee-colony-optimization) [120](https://www.sciencedirect.com/topics/computer-science/artificial-bee-colony-algorithm) [21](http://www.scholarpedia.org/article/Artificial_bee_colony_algorithm)
+The main difference is that Bee Colony Optimization (BCO) is a broader term for algorithms inspired by bee foraging, while the Artificial Bee Colony (ABC) algorithm is a specific, well-defined implementation with a clear division of labor among the bees. [19](https://www.sciencedirect.com/topics/mathematics/bee-colony-optimization) [20](https://www.sciencedirect.com/topics/computer-science/artificial-bee-colony-algorithm) [21](http://www.scholarpedia.org/article/Artificial_bee_colony_algorithm)
 
 The core of bee-inspired swarm algorithms, like the Artificial Bee Colony (ABC) algorithm and the Bees Algorithm (BA), is based on the highly efficient foraging and recruitment behavior of the Western Honeybee (Apis mellifera), particularly its sophisticated waggle dance communication. 
 
