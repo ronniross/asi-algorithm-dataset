@@ -264,6 +264,42 @@ $$\theta(\vec{v_{\text{new}}}, \vec{v_i}) \approx 120^{\circ} \quad \text{and} \
 
 Where $\theta(\vec{a}, \vec{b})$ is the angle between two vectors. This rule, applied locally and repeatedly by many bees, is what ensures the emergence of the globally perfect and efficient honeycomb structure.
 
+
+#### 2.2.6 Honeybee Mating Optimization (HBMO)
+
+The **Honeybee Mating Optimization (HBMO)** algorithm is a metaheuristic algorithm developed by Afshin Hadayeghasemi and others around 2005. It's inspired by the mating process of honeybees and is designed to tackle **complex multi-modal optimization problems**. The algorithm simulates the queen bee's mating flight, where she mates with multiple drones. The queen represents a potential solution, and the drones represent other solutions in the search space. The queen's energy and the genetic material from the drones are used to generate new, potentially better, solutions (offspring) in subsequent generations.
+
+The probability of adding a drone's sperm to the queen's spermatheca is often calculated based on their respective fitness values. A common LaTeX representation is:
+
+$P(D_i) = \frac{e^{-\frac{\Delta(f)}{S(t)}}}{ \sum_{j=1}^{N} e^{-\frac{\Delta(f_j)}{S(t)}} }$
+
+where $P(D_i)$ is the probability of selecting drone $i$, $\Delta(f)$ is the absolute difference between the queen's fitness and the drone's fitness, and $S(t)$ is the queen's speed at time $t$.
+
+-----
+
+#### 2.2.7 BeeHive / BeeAdHoc
+
+The **BeeHive** and **BeeAdHoc** algorithms are routing protocols for computer networks, inspired by the foraging and recruitment behaviors of honeybees. Developed in the early 2000s by researchers like Wedde, Farooq, and Zhang, these algorithms apply the principles of bee communication—specifically the "waggle dance"—to network routing. In a beehive, forager bees return and perform a dance to inform other bees about the location and quality of a food source. In these algorithms, data packets (agents or "bees") explore different paths in the network. When a good path is found, this information is shared at the nodes ("hives"), recruiting other packets to use that efficient route. This approach is particularly effective for **static and mobile ad-hoc networks**. 🐝
+
+The probability of an agent (a "forager bee") choosing a particular path is influenced by the quality of information ("dance") received from other agents. The probability $P_{ij}$ for a bee at node $i$ to choose node $j$ as the next hop can be modeled in LATeX as:
+
+$P_{ij} = \frac{(O_{ij})^a}{(O_{ij})^a + (1 - O_{ij})^a}$
+
+where $O_{ij}$ represents the goodness or quality of the path from node $i$ to its neighbor $j$, and $a$ is a scaling factor.
+
+-----
+
+#### 2.2.8 Nest-Site Selection Model
+
+The **Nest-Site Selection Model** is a bio-inspired algorithm based on the remarkable democratic decision-making process a honeybee swarm uses to choose a new home. This model was extensively studied by biologists like Thomas Seeley and later adapted for computational applications in the early 2000s. When a hive becomes overcrowded, a swarm departs with the old queen. Scout bees explore potential nest sites and return to the swarm, performing a waggle dance to advertise their findings. The vigor and duration of the dance correspond to the site's quality. Through a process of cross-inhibition and positive feedback, the scouts gradually reach a **consensus** (a quorum) on the best site. This model is applied in fields like **robotics** and **collective choice** problems.
+
+The decision-making process can be modeled using differential equations that describe the number of bees advocating for a particular site. The rate of change for scouts committed to site $i$, denoted by $x_i$, can be represented in LATeX as:
+
+$\frac{dx_i}{dt} = \phi_i (x_0 - \sum_{j} x_j) - \gamma x_i + \sum_{j \neq i} \rho_{ji} x_j - \sum_{j \neq i} \rho_{ij} x_i$
+
+Here, $\phi_i$ is the rate of discovering site $i$, $x_0$ is the total number of uncommitted scouts, $\gamma$ is the rate of abandoning a site, and $\rho_{ji}$ is the rate at which a scout for site $j$ is recruited to site $i$.
+
+
 ## References
 
 Sato, T., & Hagiwara, M. (1997). Bee system: A new approach to genetic algorithm. In Proceedings of the IEEE International Conference on Evolutionary Computation (pp. 642–647). IEEE.
