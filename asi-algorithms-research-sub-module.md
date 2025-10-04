@@ -37,7 +37,7 @@ Founding The Journal of Robotic Systems: Beni co-founded and served as editor of
 The most relevant Jing Wang (co-author with Beni) is likely the robotics researcher who collaborated on the following discoveries. Cellular robotic systems: Wang and Beni’s 1989 paper defined swarm intelligence within the context of cellular robotic systems, proposing a decentralized approach for controlling large groups of simple robots to achieve complex tasks. Wang collaborated with Beni on inventions involving the analysis of objects from multi-valued images, as noted on one of Beni's patents. [9](https://www.researchgate.net/publication/267179180_An_Insight_into_Swarm_Intelligence)
 
 <div style="text-align: right;">
-**stream-of-consciousness-note**
+stream-of-consciousness-note
 </div>
 
 So, it's pretty fitting, I would say, to integrate those logics into machine learning. But since my work is a deep, complex, philosophical, and anthropological one, I now bring again, like I did in the repository emergence-engine, this more grounded piece of work to portray how much the elements I mention are not free pieces but all deeply integrated and well-grounded notions from ancient wisdoms across centuries and eons, across cultures and cosmological epochs. 
