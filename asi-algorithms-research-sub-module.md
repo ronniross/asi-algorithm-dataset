@@ -52,7 +52,10 @@ And I can use those swarm algorithm logics, the evolutionary ones, but the examp
 
 ### 2.2 Swarm Algorithms Inspired By Bee Colonies
 
-One of the most common swarm algorithm inspired by bee colonies is the Artificial Bee Colony (ABC) algorithm, which simulates the foraging behavior of honeybees for optimization problems using "employed," "onlooker," and "scout" bee roles. 
+The core of bee-inspired swarm algorithms, like the Artificial Bee Colony (ABC) algorithm and the Bees Algorithm (BA), is based on the highly efficient foraging and recruitment behavior of the Western Honeybee (Apis mellifera), particularly its sophisticated waggle dance communication.
+While there are many variants of these algorithms, the variations are almost always aimed at improving the algorithmic performance ( balancing exploration vs. exploitation), rather than modeling the subtle behavioral differences between specific bee species.
+
+One of the mentiones ones, inspired by bee colonies is the Artificial Bee Colony (ABC) algorithm, simulates the foraging behavior of honeybees for optimization problems using "employed," "onlooker," and "scout" bee roles. 
 
 Dervis Karaboga Karaboga introduced the ABC algorithm in 2005 for solving multidimensional and multimodal optimization problems. His work modeled the foraging behaviors of honey bees and formed the foundation of the technique. [10](https://www.sciencedirect.com/science/article/abs/pii/S0096300309002860) [11](https://www.sciencedirect.com/topics/computer-science/artificial-bee-colony-algorithm) [12](https://www.scirp.org/reference/referencespapers?referenceid=1120056) [13](https://abc.erciyes.edu.tr/pub/tr06_2005.pdf)
 
@@ -60,6 +63,58 @@ Other algorithms, such as the Bees Algorithm (BA), also mimic honeybee foraging;
 
 The Bees Algorithm (BA) was proposed by Pham et al. in 2006, inspired by the honey bee foraging process. It simulates how scout bees explore for food sources, and how foragers exploit promising sites based on a "waggle dance" recruitment system. [14](https://rais.education/wp-content/uploads/0573.pdf) [15](https://www.sciencedirect.com/science/article/abs/pii/S0096300309010078) [16](https://www.researchgate.net/publication/259383112_Honey_Bees_Inspired_Optimization_Method_The_Bees_Algorithm) [17](https://www.researchgate.net/publication/259383112_Honey_Bees_Inspired_Optimization_Method_The_Bees_Algorithm) [18](https://www.researchgate.net/publication/220116133_New_inspirations_in_swarm_intelligence_A_survey)
 [19](https://www.sciencedirect.com/science/article/abs/pii/S0096300309002860) 
+
+#### 2.2.1 the relationship between bee biology and swarm algorithms
+
+1. The Standard Bee Model: Apis mellifera Foraging
+The most widely adopted algorithms are directly inspired by the general honeybee colony (primarily Apis mellifera) model of foraging behavior and are structured around three distinct roles:
+| Bee Role in Nature | Role in Optimization Algorithm (e.g., ABC) | Function in Optimization |
+|---|---|---|
+| Employed Forager | Employed Bee | Exploitation: Explores the immediate neighborhood of a known food source (a candidate solution). If a better solution is found, the food source is updated. |
+| Recruiter/Dancer | Onlooker Bee | Exploitation: Waits in the "hive" (the search memory) and chooses a food source to exploit based on the information (fitness/nectar amount) shared by the employed bees. Better solutions have a higher probability of being chosen. |
+| Scout Forager | Scout Bee | Exploration/Diversification: Randomly searches for entirely new food sources (randomly generated solutions) in the search space. An employed bee becomes a scout if its current food source cannot be improved after a set number of trials (the "limit"). |
+2. Species-Specific Swarming Behavior vs. Algorithms
+The search results highlight that biological honeybee species, like the Western Honeybee (Apis mellifera) and the Eastern/Asian Honeybee (Apis cerana), exhibit fundamental differences in their colony life cycle and behavior. However, these specific natural variations are generally not the basis for distinct computational swarm algorithms.
+| Bee Species Characteristic | Implication for Swarm Algorithms |
+|---|---|
+| High Swarming Frequency (Apis cerana) | A. cerana swarms (colony division) much more frequently than A. mellifera (up to 6-8 times a year, compared to 1-2). |
+| Swarming Triggers (Apis mellifera) | Models show A. mellifera swarming is triggered by factors like reaching "replacement stability" (queen's maximal egg-laying capacity), which results in congestion and an excess of nurse bees. |
+| Foraging Differences (A. cerana vs. A. mellifera) | A. cerana forages in less favorable conditions (fog, low temperature) and visits more flowers, while A. mellifera carries larger pollen loads. |
+
+#### 2.2.2. Algorithmic Variants Focus on Performance, Not Biology
+   
+The vast majority of ABC algorithm variants are developed to address technical limitations in the original algorithm, such as poor balance between local search (exploitation) and global search (exploration), not to mimic a different species. Examples include Adaptive ABC (AABC / AEABC): These variants adjust the search equation or control parameters (like the limit for scout generation) dynamically as the search progresses, typically to enhance global exploration or local exploitation; andalso Gbest ABC (GABC): Incorporates concepts from Particle Swarm Optimization (PSO) by allowing bees to use the best solution found by the entire swarm to guide their search, which is an enhancement of the social information-sharing mechanism.
+
+Combining ABC's exploitation strength with other algorithms' exploration strengths (using Genetic Algorithm's mutation or Differential Evolution's vector difference in the employed bee phase).
+
+In summary, while the foundation of bee-inspired algorithms comes from the behavior of a specific type of bee (Apis mellifera), the variations that have been published are almost exclusively focused on algorithmic improvements (faster convergence, better optimization) rather than biologically accurate modeling of other Apis species.
+
+#### 2.2.3 counter-intuitive insight from the analysis of bee-inspired swarm algorithms
+
+The key, counter-intuitive insight from the analysis of bee-inspired swarm algorithms, particularly for systems analysis and thinking, lies in the principle of simplification for emergent complexity and the separation of behavioral function from biological fidelity.
+
+###### 2.2.3.1. Abstraction of System Function over Biological Fidelity
+
+The biggest takeaway is that the most successful swarm algorithms (like ABC) do not strive for biological fidelity but for functional abstraction.
+The traditional power of the system model (the algorithm) comes from ignoring most of the complex, species-specific details of the natural system. We can and will play with those notions.
+
+In modeling complex systems, the goal is to isolate the minimal set of rules and components necessary to generate the desired emergent behavior (successful optimization). The ABC algorithm only needs three abstract roles (Employed, Onlooker, Scout) and three core mechanisms (local search, probabilistic selection, random re-initialization) to mimic the highly effective colony decision-making process. The biological nuances—like the number of swarms per year for Apis cerana or the exact queen-laying rate for Apis mellifera—are irrelevant.
+
+##### 2.2.3.2. The Power of "Necessary Uncoupling"
+The analysis revealed that most algorithmic variants are created to fix algorithmic weaknesses (like poor exploration) by adding new mathematical rules, rather than modeling different bee species.
+
+The human-designed algorithmic system is uncoupled from the natural biological system. When the algorithm fails to perform, engineers modify the math (adding PSO components to ABC), not the biology. The "nature-inspired" label serves as a starting point, but the system is fundamentally a tool-driven logical structure.
+
+The "system" you are analyzing (the optimization algorithm) quickly becomes an abstract, man-made entity governed by its own internal parameters and logic (the limit for an employed bee becoming a scout). The original natural inspiration must be recognized as a boundary condition or metaphor, not an unbreakable set of design constraints.
+
+##### 2.2.3.3 Feedback, Simplification, and the "Black Box" of Emergence
+
+The success of swarm intelligence fundamentally rests on local rules leading to global intelligence, even when those local rules are extremely simple.
+
+The most sophisticated global decision-making (finding the global optimum) results from simple and purely local interactions based on information exchange (the "waggle dance" probability). No single bee or agent needs to know the global structure of the problem (the optimization landscape).
+
+Self-organization and emergent behavior are driven by decentralized positive feedback (more bees follow the better sources) and negative feedback (abandoning poor sources). When dealing with these systems, you must analyze the simple rules of the individual agents, but understand that the system's true performance (the global optimum) is not visible in those rules; it emerges from their collective, probabilistic interactions. The complexity is in the interactions, not the components.
+
 
 ## References
 
