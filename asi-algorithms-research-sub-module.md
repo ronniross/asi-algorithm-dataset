@@ -205,7 +205,7 @@ This model simulates how bees build a honeycomb. The marvel of the honeycomb is 
 **Building Rule:** A bee will add wax to a growing cell wall in a way that attempts to complete a hexagon. Essentially, when starting a new cell next to an existing one, the bee builds a new wall at the characteristic 120° angle from the existing walls.
 **Chain Reaction:** As bees complete individual cells, they create the foundation for new cells. The process continues outwards, with each new hexagon being a perfect fit for its neighbors.
 
-##### 2.2.5.2 HExagonal Grid.
+##### 2.2.5.2 Hexagonal Grid.
 
 Here is a simplified visual representation of the process on a hexagonal grid. We'll use `_` and `\` and `/` to represent cell walls.
 
