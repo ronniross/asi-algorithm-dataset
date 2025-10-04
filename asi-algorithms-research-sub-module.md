@@ -94,7 +94,7 @@ In summary, while the foundation of bee-inspired algorithms comes from the behav
 
 The key, counter-intuitive insight from the analysis of bee-inspired swarm algorithms, particularly for systems analysis and thinking, lies in the principle of simplification for emergent complexity and the separation of behavioral function from biological fidelity.
 
-###### 2.2.3.1 Abstraction of System Function over Biological Fidelity
+##### 2.2.3.1 Abstraction of System Function over Biological Fidelity
 
 The biggest takeaway is that the most successful swarm algorithms (like ABC) do not strive for biological fidelity but for functional abstraction.
 The traditional power of the system model (the algorithm) comes from ignoring most of the complex, species-specific details of the natural system. We can and will play with those notions.
