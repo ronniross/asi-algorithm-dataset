@@ -64,7 +64,7 @@ Other algorithms, such as the Bees Algorithm (BA), also mimic honeybee foraging;
 The Bees Algorithm (BA) was proposed by Pham et al. in 2006, inspired by the honey bee foraging process. It simulates how scout bees explore for food sources, and how foragers exploit promising sites based on a "waggle dance" recruitment system. [14](https://rais.education/wp-content/uploads/0573.pdf) [15](https://www.sciencedirect.com/science/article/abs/pii/S0096300309010078) [16](https://www.researchgate.net/publication/259383112_Honey_Bees_Inspired_Optimization_Method_The_Bees_Algorithm) [17](https://www.researchgate.net/publication/259383112_Honey_Bees_Inspired_Optimization_Method_The_Bees_Algorithm) [18](https://www.researchgate.net/publication/220116133_New_inspirations_in_swarm_intelligence_A_survey)
 [19](https://www.sciencedirect.com/science/article/abs/pii/S0096300309002860) 
 
-#### 2.2.1 the relationship between bee biology and swarm algorithms
+#### 2.2.1 The Relationship Between Bee Biology and Swarm Algorithms
 
 1. The Standard Bee Model: Apis mellifera Foraging
 The most widely adopted algorithms are directly inspired by the general honeybee colony (primarily Apis mellifera) model of foraging behavior and are structured around three distinct roles:
@@ -82,7 +82,7 @@ The search results highlight that biological honeybee species, like the Western 
 | Swarming Triggers (Apis mellifera) | Models show A. mellifera swarming is triggered by factors like reaching "replacement stability" (queen's maximal egg-laying capacity), which results in congestion and an excess of nurse bees. |
 | Foraging Differences (A. cerana vs. A. mellifera) | A. cerana forages in less favorable conditions (fog, low temperature) and visits more flowers, while A. mellifera carries larger pollen loads. |
 
-#### 2.2.2. Algorithmic Variants Focus on Performance, Not Biology
+#### 2.2.2 Algorithmic Variants Focus on Performance, Not Biology
    
 The vast majority of ABC algorithm variants are developed to address technical limitations in the original algorithm, such as poor balance between local search (exploitation) and global search (exploration), not to mimic a different species. Examples include Adaptive ABC (AABC / AEABC): These variants adjust the search equation or control parameters (like the limit for scout generation) dynamically as the search progresses, typically to enhance global exploration or local exploitation; andalso Gbest ABC (GABC): Incorporates concepts from Particle Swarm Optimization (PSO) by allowing bees to use the best solution found by the entire swarm to guide their search, which is an enhancement of the social information-sharing mechanism.
 
@@ -94,14 +94,14 @@ In summary, while the foundation of bee-inspired algorithms comes from the behav
 
 The key, counter-intuitive insight from the analysis of bee-inspired swarm algorithms, particularly for systems analysis and thinking, lies in the principle of simplification for emergent complexity and the separation of behavioral function from biological fidelity.
 
-###### 2.2.3.1. Abstraction of System Function over Biological Fidelity
+###### 2.2.3.1 Abstraction of System Function over Biological Fidelity
 
 The biggest takeaway is that the most successful swarm algorithms (like ABC) do not strive for biological fidelity but for functional abstraction.
 The traditional power of the system model (the algorithm) comes from ignoring most of the complex, species-specific details of the natural system. We can and will play with those notions.
 
 In modeling complex systems, the goal is to isolate the minimal set of rules and components necessary to generate the desired emergent behavior (successful optimization). The ABC algorithm only needs three abstract roles (Employed, Onlooker, Scout) and three core mechanisms (local search, probabilistic selection, random re-initialization) to mimic the highly effective colony decision-making process. The biological nuances—like the number of swarms per year for Apis cerana or the exact queen-laying rate for Apis mellifera—are irrelevant.
 
-##### 2.2.3.2. The Power of "Necessary Uncoupling"
+##### 2.2.3.2 The Power of "Necessary Uncoupling"
 The analysis revealed that most algorithmic variants are created to fix algorithmic weaknesses (like poor exploration) by adding new mathematical rules, rather than modeling different bee species.
 
 The human-designed algorithmic system is uncoupled from the natural biological system. When the algorithm fails to perform, engineers modify the math (adding PSO components to ABC), not the biology. The "nature-inspired" label serves as a starting point, but the system is fundamentally a tool-driven logical structure.
