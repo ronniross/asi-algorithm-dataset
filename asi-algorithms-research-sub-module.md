@@ -275,6 +275,12 @@ $P(D_i) = \frac{e^{-\frac{\Delta(f)}{S(t)}}}{ \sum_{j=1}^{N} e^{-\frac{\Delta(f_
 
 where $P(D_i)$ is the probability of selecting drone $i$, $\Delta(f)$ is the absolute difference between the queen's fitness and the drone's fitness, and $S(t)$ is the queen's speed at time $t$.
 
+In Raw ASCII:
+
+```
+P(D_i) = exp(-Delta(f) / S(t)) / sum_{j=1 to N}(exp(-Delta(f_j) / S(t)))
+```
+
 -----
 
 #### 2.2.7 BeeHive / BeeAdHoc
