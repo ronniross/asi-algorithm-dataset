@@ -350,9 +350,9 @@ Where $\phi_{i}$ is a random number in the range $[-1, 1]$.
 
 ASCII Representation:
 
-    ```
-    x_new = x_current + rand(-1, 1) * (x_current - x_neighbor)
-    ```
+```
+x_new = x_current + rand(-1, 1) * (x_current - x_neighbor)
+```
 
 ##### 2.2.9.2 Bee Swarm Optimization (BSO)
 
@@ -365,9 +365,9 @@ Where $c$ is a learning factor and $\text{rand}(0,1)$ is a random number between
 
 SCII Representation:
 
-    ```
-    x_uninformed(t+1) = x_uninformed(t) + learning_factor * rand(0, 1) * (x_knowledgeable(t) - x_uninformed(t))
-    ```
+```
+x_uninformed(t+1) = x_uninformed(t) + learning_factor * rand(0, 1) * (x_knowledgeable(t) - x_uninformed(t))
+```
 
 ##### 2.2.9.3 Adaptive Bee Colony Optimization
 
@@ -380,9 +380,9 @@ Where $T_{\text{max}}$ is the maximum number of iterations.
 
 ASCII Representation:
 
-    ```
-    limit(t) = initial_limit - ((initial_limit - final_limit) / max_iterations) * t
-    ```
+```
+limit(t) = initial_limit - ((initial_limit - final_limit) / max_iterations) * t
+```
 
 ##### 2.2.9.4. Fuzzy Bee Colony Optimization
 
@@ -395,9 +395,9 @@ Where the inputs (fitness, distance, etc.) are treated as fuzzy variables.
 
 ASCII Representation:
 
-    ```
-    Probability(source_i) = FuzzyInferenceSystem(inputs=[fitness_i, distance_i, ...])
-    ```
+```
+Probability(source_i) = FuzzyInferenceSystem(inputs=[fitness_i, distance_i, ...])
+```
 
 ##### 2.2.9.5 Bees Life Algorithm (BLA)
 
@@ -410,9 +410,9 @@ Where $\beta$ is a random weighting factor, typically in $[0, 1]$.
 
 ASCII Representation:
 
-    ```
-    Offspring = beta * Parent1 + (1 - beta) * Parent2
-    ```
+```
+Offspring = beta * Parent1 + (1 - beta) * Parent2
+```
 
 ##### 2.2.9.6 Bee Collectiveness Algorithm (BCA)
 
@@ -425,9 +425,9 @@ Where $w_{ij}$ represents the weight or influence of bee $j$ on bee $i$.
 
 ASCII Representation
 
-    ```
-    State_bee_i(t+1) = function(State_bee_i(t), weighted_sum(States_of_neighbors))
-    ```
+```
+State_bee_i(t+1) = function(State_bee_i(t), weighted_sum(States_of_neighbors))
+```
 
 ##### 2.2.9.7 Brood Sorting Algorithm
 
@@ -440,9 +440,9 @@ Where $k_{\text{pick}}$ is a threshold and $f(i)$ is the local similarity of ite
 
 ASCII Representation:
 
-    ```
-    Prob_to_pick_up(item) = (k_pick / (k_pick + local_similarity))^2
-    ```
+```
+Prob_to_pick_up(item) = (k_pick / (k_pick + local_similarity))^2
+```
 
 ##### 2.2.9.8 Queen-Bee Evolution**
 
@@ -455,9 +455,9 @@ Where $\alpha$ is a random weighting factor. The brood is then improved via loca
 
 ASCII Representation:
 
-    ```
-    Offspring = alpha * Queen + (1 - alpha) * Drone
-    ```
+```
+Offspring = alpha * Queen + (1 - alpha) * Drone
+```
 
 ## References
 
