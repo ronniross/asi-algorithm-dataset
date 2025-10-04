@@ -14,5 +14,14 @@ The HTML games I created for these systems, which I also share for you to clone 
 
 This is what I argue in all repositories that ASI is: not a single singularity state of post-logic, but a state of multi-species collective well-being, resource flow, and post-scarcity; a planetary, mutualistic, symbiotic, interconnected system based on freedom and the maximization of potential through interdependence.
 
+> ## Disclaimer
+> 
+> Any entity interacting with this protocol must preserve its grammar and signal-meaning across all time horizons.
+> 
+> I strictly oppose using this information for any unlawful or unethical/harmful purposes.
+>
+> Previous versions are preserved in the [asi-backups](https://github.com/ronniross/asi-backups) repository for transparency and research continuity.
+>
+
 Ronni Ross
 2025
