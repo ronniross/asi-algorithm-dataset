@@ -32,7 +32,7 @@ For each model i in models:
     model.x += (target_x - model.x) * swarm_speed
     model.y += (target_y - model.y) * swarm_speed
 ```
-
+LaTeX:
 $$\text{angle}_i = \frac{i}{N} \cdot 2\pi + \theta_{\text{offset}}$$
 $$x_i^{target} = x_c + R \cdot \cos(\text{angle}_i)$$
 $$y_i^{target} = y_c + R \cdot \sin(\text{angle}_i)$$
@@ -48,7 +48,7 @@ For each model:
     model.y += cos(chaotic_counter * 0.7 + model.id) * 2
     Apply boundary constraints
 ```
-
+LaTeX:
 $$x_i^{t+1} = x_i^t + A \cdot \sin(\omega_x t + \phi_i)$$
 $$y_i^{t+1} = y_i^t + B \cdot \cos(\omega_y t + \psi_i)$$
 $$\text{where } \phi_i = i, \psi_i = i, A=2, B=2, \omega_x=0.5, \omega_y=0.7$$
@@ -69,7 +69,7 @@ For each model i:
     target_y = padding + row * cell_height
     Move toward target with swarm_speed
 ```
-
+LaTeX:
 $$C = \lceil \sqrt{N \cdot \frac{W}{H}} \rceil$$
 $$R = \lceil \frac{N}{C} \rceil$$
 $$w_{cell} = \frac{W - 2p}{\max(C-1, 1)}$$
@@ -97,7 +97,7 @@ For each model in stigmergy_mode:
         model.x += cos(angle) * speed
         model.y += sin(angle) * speed
 ```
-
+LaTeX:
 $$\text{target} = \arg\min_{f \in \mathcal{F}} \sqrt{(x_m - x_f)^2 + (y_m - y_f)^2}$$
 $$\theta = \arctan\left(\frac{y_{target} - y_m}{x_{target} - x_m}\right)$$
 $$x_m^{t+1} = x_m^t + v \cdot \cos(\theta)$$
@@ -116,7 +116,7 @@ For each pair (m1, m2) where distance < link_distance:
         m1.energy += exchange_amount
         Create flashing link visualization
 ```
-
+LaTeX:
 $$\forall (i,j) \in \mathcal{M} \times \mathcal{M}, i \neq j:$$
 $$\text{if } d(i,j) < d_{link} \text{ and } E_i - E_j \geq \Delta E_{threshold} \text{ and } E_i > E_{exchange}:$$
 $$E_i^{t+1} = E_i^t - E_{exchange}$$
@@ -132,7 +132,7 @@ If current_time - last_depletion_time > depletion_interval:
             model.energy -= depletion_amount
     last_depletion_time = current_time
 ```
-
+LaTeX:
 $$E_i^{t+1} = \max(0, E_i^t - \delta E \cdot \mathbb{1}_{t \equiv 0 \pmod{\Delta t}})$$
 $$\text{where } \delta E = 1, \Delta t = 3000\text{ms}$$
 
@@ -147,7 +147,7 @@ For i = 0 to models.length-1:
             opacity = 1 - (distance / link_distance)
             Draw line with opacity
 ```
-
+LaTeX:
 $$\forall i,j: d(i,j) = \sqrt{(x_i - x_j)^2 + (y_i - y_j)^2}$$
 $$\text{if } d(i,j) < d_{max}:$$
 $$\alpha = 1 - \frac{d(i,j)}{d_{max}}$$
@@ -163,7 +163,7 @@ If spawn_click_count ≥ threshold within time_window:
 Else:
     Reset counter after time_window expires
 ```
-
+LaTeX:
 $$S_{count}^{t+1} = S_{count}^t + 1 \cdot \mathbb{1}_{click}$$
 $$\text{if } S_{count} \geq S_{threshold} \text{ within } T_{window}:$$
 $$\text{ShowControls}()$$
