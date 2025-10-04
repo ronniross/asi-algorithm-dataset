@@ -373,12 +373,12 @@ An "uninformed" bee at position $x_{j}$ updates its position by moving towards a
 
 This is a modification where a key parameter, such as the abandonment `limit`, is adjusted dynamically over iterations $t$.
 
-  * **LaTeX Representation:**
+*LaTeX Representation:
 
     $$\text{limit}(t) = \lfloor \text{limit}_{\text{initial}} - \left(\frac{\text{limit}_{\text{initial}} - \text{limit}_{\text{final}}}{T_{\text{max}}}\right) \cdot t \rfloor$$
     Where $T_{\text{max}}$ is the maximum number of iterations.
 
-  * **ASCII Representation:**
+ASCII Representation:
 
     ```
     limit(t) = initial_limit - ((initial_limit - final_limit) / max_iterations) * t
@@ -388,12 +388,12 @@ This is a modification where a key parameter, such as the abandonment `limit`, i
 
 The probability $P_i$ that an onlooker bee chooses a food source is determined by a Fuzzy Inference System (FIS) rather than a simple fitness calculation.
 
-  * **LaTeX Representation:**
+LaTeX Representation:
 
     $$P_i = \text{FIS}(\text{fitness}_i, \text{distance}_i, \dots)$$
     Where the inputs (fitness, distance, etc.) are treated as fuzzy variables.
 
-  * **ASCII Representation:**
+ASCII Representation:
 
     ```
     Probability(source_i) = FuzzyInferenceSystem(inputs=[fitness_i, distance_i, ...])
@@ -403,12 +403,12 @@ The probability $P_i$ that an onlooker bee chooses a food source is determined b
 
 This algorithm incorporates a reproduction (crossover) operator. An offspring $O$ is created from two parent solutions, $P_1$ and $P_2$.
 
-  * **LaTeX Representation:**
+LaTeX Representation:
 
     $$O = \beta \cdot P_1 + (1-\beta) \cdot P_2$$
     Where $\beta$ is a random weighting factor, typically in $[0, 1]$.
 
-  * **ASCII Representation:**
+ASCII Representation:
 
     ```
     Offspring = beta * Parent1 + (1 - beta) * Parent2
@@ -418,12 +418,12 @@ This algorithm incorporates a reproduction (crossover) operator. An offspring $O
 
 The state of a bee $S_i$ is updated based on the collective influence of its neighbors $j$ in the set $N(i)$.
 
-  * **LaTeX Representation:**
+LaTeX Representation:
 
     $$S_i(t+1) = f\left(S_i(t), \sum_{j \in N(i)} w_{ij} \cdot S_j(t)\right)$$
     Where $w_{ij}$ represents the weight or influence of bee $j$ on bee $i$.
 
-  * **ASCII Representation:**
+ASCII Representation:
 
     ```
     State_bee_i(t+1) = function(State_bee_i(t), weighted_sum(States_of_neighbors))
@@ -433,12 +433,12 @@ The state of a bee $S_i$ is updated based on the collective influence of its nei
 
 This model uses probabilities for picking up and dropping items based on local similarity. The probability of an agent picking up an item $i$ is:
 
-  * **LaTeX Representation:**
+LaTeX Representation:
 
     $$P_{\text{pick}}(i) = \left( \frac{k_{\text{pick}}}{k_{\text{pick}} + f(i)} \right)^2$$
     Where $k_{\text{pick}}$ is a threshold and $f(i)$ is the local similarity of item $i$ to its neighbors.
 
-  * **ASCII Representation:**
+ASCII Representation:
 
     ```
     Prob_to_pick_up(item) = (k_pick / (k_pick + local_similarity))^2
@@ -448,12 +448,12 @@ This model uses probabilities for picking up and dropping items based on local s
 
 This hybrid algorithm combines a "mating flight" (crossover) between the queen $Q$ (best solution) and a drone $D_k$ (another good solution) to create brood (offspring) $B_j$.
 
-  * **LaTeX Representation:**
+LaTeX Representation:
 
     $$B_j = \alpha \cdot Q + (1-\alpha) \cdot D_k$$
     Where $\alpha$ is a random weighting factor. The brood is then improved via local search.
 
-  * **ASCII Representation:**
+ASCII Representation:
 
     ```
     Offspring = alpha * Queen + (1 - alpha) * Drone
