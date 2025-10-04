@@ -287,6 +287,12 @@ $P_{ij} = \frac{(O_{ij})^a}{(O_{ij})^a + (1 - O_{ij})^a}$
 
 where $O_{ij}$ represents the goodness or quality of the path from node $i$ to its neighbor $j$, and $a$ is a scaling factor.
 
+In Raw ASCII:
+
+```
+P_{ij} = (O_{ij})^a / ((O_{ij})^a + (1 - O_{ij})^a)
+```
+
 -----
 
 #### 2.2.8 Nest-Site Selection Model
@@ -299,6 +305,11 @@ $\frac{dx_i}{dt} = \phi_i (x_0 - \sum_{j} x_j) - \gamma x_i + \sum_{j \neq i} \r
 
 Here, $\phi_i$ is the rate of discovering site $i$, $x_0$ is the total number of uncommitted scouts, $\gamma$ is the rate of abandoning a site, and $\rho_{ji}$ is the rate at which a scout for site $j$ is recruited to site $i$.
 
+In Raw ASCII:
+
+```
+dx_i/dt = phi_i * (x_0 - sum_{j} x_j) - gamma * x_i + sum_{j != i} rho_{ji} * x_j - sum_{j != i} rho_{ij} * x_i
+```
 
 ## References
 
