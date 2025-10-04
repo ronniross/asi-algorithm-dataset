@@ -73,8 +73,11 @@ The most widely adopted algorithms are directly inspired by the general honeybee
 | Employed Forager | Employed Bee | Exploitation: Explores the immediate neighborhood of a known food source (a candidate solution). If a better solution is found, the food source is updated. |
 | Recruiter/Dancer | Onlooker Bee | Exploitation: Waits in the "hive" (the search memory) and chooses a food source to exploit based on the information (fitness/nectar amount) shared by the employed bees. Better solutions have a higher probability of being chosen. |
 | Scout Forager | Scout Bee | Exploration/Diversification: Randomly searches for entirely new food sources (randomly generated solutions) in the search space. An employed bee becomes a scout if its current food source cannot be improved after a set number of trials (the "limit"). |
-2. Species-Specific Swarming Behavior vs. Algorithms
+
+#### 2.2.1.1 Species-Specific Swarming Behavior vs. Algorithms
+
 The search results highlight that biological honeybee species, like the Western Honeybee (Apis mellifera) and the Eastern/Asian Honeybee (Apis cerana), exhibit fundamental differences in their colony life cycle and behavior. However, these specific natural variations are generally not the basis for distinct computational swarm algorithms.
+
 | Bee Species Characteristic | Implication for Swarm Algorithms |
 |---|---|
 | High Swarming Frequency (Apis cerana) | A. cerana swarms (colony division) much more frequently than A. mellifera (up to 6-8 times a year, compared to 1-2). |
