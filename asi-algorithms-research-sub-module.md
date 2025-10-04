@@ -116,6 +116,25 @@ The most sophisticated global decision-making (finding the global optimum) resul
 
 Self-organization and emergent behavior are driven by decentralized positive feedback (more bees follow the better sources) and negative feedback (abandoning poor sources). When dealing with these systems, you must analyze the simple rules of the individual agents, but understand that the system's true performance (the global optimum) is not visible in those rules; it emerges from their collective, probabilistic interactions. The complexity is in the interactions, not the components.
 
+### 2.2.4 How the algorithms manage control and memory compared to real bees, and how this relates to broader concepts of distributed, intelligent systems.
+
+Control, Memory, and the Why of Stigmergy: The crucial, non-intuitive distinction between natural bee colonies and computational bee algorithms centers on how information is stored and used and the nature of decentralized control.
+
+#### 2.2.4.1 (The Hive as a Database)
+
+In swarm intelligence, we often call the system "decentralized" because no single agent directs the others. However, the mechanism of information sharing reveals a subtle but critical form of centralization.
+
+At the very least, the structure is also decentralized; this is an important addendum. But I will explore that further later. For now, let's first focus on establishing some of the elemental notions present in these natural beehive systems.
+
+#### 2.2.4.2 Natural Bees (True Decentralization/Stigmergy)
+
+The "memory" of a food source's quality is chiefly stored externally through the waggle dance. The dance is a temporary, physical behavior whose information must be decoded by onlookers. More importantly, the decision of which food source is "best" is continuously and implicitly recalculated by the collective probability distribution of all dances. The environment is the medium of control.
+
+#### 2.2.4.3 Artificial Bees (Centralized Memory)
+
+In the ABC algorithm, the fitness values of all food sources (solutions) are typically stored in a centralized array or shared memory structure accessible to all agents. Onlooker bees then choose from this list using a probability formula.
+
+The artificial hive acts like a central database of solutions. The "decentralized" agents rely on this shared, explicit memory. This differs significantly from natural stigmergy, where information is stored indirectly in the environment (e.g., pheromones or dance intensity).
 
 ## References
 
