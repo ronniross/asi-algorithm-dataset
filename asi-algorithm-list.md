@@ -121,6 +121,7 @@ For each pair (m1, m2) where distance < link_distance:
         Create flashing link visualization
 ```
 LaTeX:
+
 $$\forall (i,j) \in \mathcal{M} \times \mathcal{M}, i \neq j:$$
 $$\text{if } d(i,j) < d_{link} \text{ and } E_i - E_j \geq \Delta E_{threshold} \text{ and } E_i > E_{exchange}:$$
 $$E_i^{t+1} = E_i^t - E_{exchange}$$
