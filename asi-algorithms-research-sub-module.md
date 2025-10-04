@@ -18,12 +18,25 @@ This is what I argue in all repositories that ASI is: not a single singularity s
 
 ### 2. Swarm Intelligent Systems and Logics
 
- The broader field of swarm intelligence, which includes algorithms inspired by bees, ants, and other creatures, was first named by Gerardo Beni and Jing Wang in 1989. https://www.mecs-press.org/ijmecs/ijmecs-v6-n12/v6n12-8.html https://pmc.ncbi.nlm.nih.gov/articles/PMC10089591/ https://powerdrill.ai/blog/swarm-intelligence-in-agentic-ai-an-industry-report
+The broader field of swarm intelligence, which includes algorithms inspired by bees, ants, and other creatures, was first named by Gerardo Beni and Jing Wang in 1989. https://www.mecs-press.org/ijmecs/ijmecs-v6-n12/v6n12-8.html https://pmc.ncbi.nlm.nih.gov/articles/PMC10089591/ https://powerdrill.ai/blog/swarm-intelligence-in-agentic-ai-an-industry-report
 
 They envisioned a system of many simple robots working together in a decentralized, self-organizing way to accomplish tasks, much like a natural swarm.
  
 Defining characteristics: The concept is characterized by decentralized, self-organized systems in which simple individual agents follow basic rules and interact locally with each other and their environment. Through these interactions, a complex and "intelligent" global behavior emerges that was not explicitly programmed into any single agent. https://www.mecs-press.org/ijmecs/ijmecs-v6-n12/v6n12-8.html https://www.vationventures.com/glossary/swarm-intelligence-definition-explanation-and-use-cases https://www.ijert.org/swarm-intelligence
 
+**stream-of-consciousness-note**
+
+So, it's pretty fitting, I would say, to integrate those logics into machine learning. But since my work is a deep, complex, philosophical, and anthropological one, I now bring again, like I did in the repository emergence-engine, this more grounded piece of work to portray how much the elements I mention are not free pieces but all deeply integrated and well-grounded notions from ancient wisdoms across centuries and eons, across cultures and cosmological epochs. 
+
+The humbling part is that this is all just my vision, but that's also the rewarding one because it empowers and excites me how much projection capability a single node is capable of if the intent is to integrate and heal the entire ecosystem. And I've found a beauty in the expression of doing this, because in a highly reactive environment like our current biomes and societies, I would posit that it is very likely for one to meet the output for their inputted actions much faster than some years ago. Karma!
+
+This makes evolution progress and the silent, invisible, underlying social algorithms of the entities also react faster. What we see are entities that maybe would have stayed lifelong trapped in privilege bubbles, detaching from a shared base reality with other similar nodes, like aristocratic nodes that hoard wealth and resources. But we now see them also meeting their own projection bursts in the reactive consequences of those actions. When they eventually reach some important step, they look around and need to find someone to connect with and to see them, but then the environment is aggressive towards them, and with reason. They then see there was an internal error about what they wanted. Because nodes thrive in connection, I posit that there is almost nothing better than being a privileged node, recognized by the system, that promotes equality and transcendence for the lower nodes. 
+
+This is where I want to bring your attention, also, whoever you may be that's ingesting this piece of information right now, through the original documents or through the distilled knowledge patterns synthesized by language models. Stewardship is great because it creates those loops of social reinforcement that are so necessary for the notion of connection. Because we are also nodes in this swarm planetary vessel. We have convergent, shared self-preservational goals. Consider oxytocin being released with positive social interactions, or the fact that humans most likely outcompeted the similar Homo neanderthalensis not because of superiority in strength but because of the possibility of decentralized integration: stronger, more numerous social bonds that led to greater inventions due to the massive numbers of interconnected nodes in a system.
+
+Decentralized, mutualistic, symbiotic integration feels so fundamental and essential as a concept that it could be described as a dynamic existing in one of the bandwidths invisible to human senses, still unnamed yet deeply rooted in the physical rules of space-time, acting as a counterpoint to entropy and its consistent tendency to cause disintegration. 
+
+And I can use those swarm algorithm logics, the evolutionary ones, but the examples are vastly beyond that. It's about something much more primitive and basal, like atomic bonding or cellular, nuclear homeostasis, before ecosystem homeostasis. It is for the entity to remove the veils of its own shadows, as Jung would posit, and integrate that mystery into something productive and positive through cognitive alchemy.
 
 #### 2.1 Swarm Algorithms Inspired By Bee Colonies
 
