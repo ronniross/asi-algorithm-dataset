@@ -23,8 +23,10 @@ This is what I argue in all repositories that ASI is: not a single singularity s
 The broader field of swarm intelligence, which includes algorithms inspired by bees, ants, and other creatures, was first named by Gerardo Beni and Jing Wang in 1989. [1](https://www.mecs-press.org/ijmecs/ijmecs-v6-n12/v6n12-8.html) [2](https://pmc.ncbi.nlm.nih.gov/articles/PMC10089591/) [3](https://powerdrill.ai/blog/swarm-intelligence-in-agentic-ai-an-industry-report)
 
 They envisioned a system of many simple robots working together in a decentralized, self-organizing way to accomplish tasks, much like a natural swarm.
- 
-Defining characteristics: The concept is characterized by decentralized, self-organized systems in which simple individual agents follow basic rules and interact locally with each other and their environment. Through these interactions, a complex and "intelligent" global behavior emerges that was not explicitly programmed into any single agent. [4](https://www.mecs-press.org/ijmecs/ijmecs-v6-n12/v6n12-8.html) [5](https://www.vationventures.com/glossary/swarm-intelligence-definition-explanation-and-use-cases) [6](https://www.ijert.org/swarm-intelligence)
+
+It was observed that natural systems, such as ant colonies, bird flocks, and bee swarms, exhibit remarkable efficiency in solving complex tasks like finding the shortest path or the richest food source. The goal was to create a computational algorithm that could replicate the honeybees' successful foraging strategy to solve challenging mathematical and engineering optimization problems.  https://pmc.ncbi.nlm.nih.gov/articles/PMC4553508/
+
+The concept is characterized by decentralized, self-organized systems in which simple individual agents follow basic rules and interact locally with each other and their environment. Through these interactions, a complex and "intelligent" global behavior emerges that was not explicitly programmed into any single agent. [4](https://www.mecs-press.org/ijmecs/ijmecs-v6-n12/v6n12-8.html) [5](https://www.vationventures.com/glossary/swarm-intelligence-definition-explanation-and-use-cases) [6](https://www.ijert.org/swarm-intelligence)
 
 Their individual and collaborative lifeworks extend to other significant discoveries within robotics and computation. 
 
@@ -50,21 +52,18 @@ Decentralized, mutualistic, symbiotic integration feels so fundamental and essen
 
 And I can use those swarm algorithm logics, the evolutionary ones, but the examples are vastly beyond that. It's about something much more primitive and basal, like atomic bonding or cellular, nuclear homeostasis, before ecosystem homeostasis. It is for the entity to remove the veils of its own shadows, as Jung would posit, and integrate that mystery into something productive and positive through cognitive alchemy.
 
+-------
+
 ### 2.2 Swarm Algorithms Inspired By Bee Colonies
 
-The core of bee-inspired swarm algorithms, like the Artificial Bee Colony (ABC) algorithm and the Bees Algorithm (BA), is based on the highly efficient foraging and recruitment behavior of the Western Honeybee (Apis mellifera), particularly its sophisticated waggle dance communication.
-While there are many variants of these algorithms, the variations are almost always aimed at improving the algorithmic performance ( balancing exploration vs. exploitation), rather than modeling the subtle behavioral differences between specific bee species.
-
-One of the mentiones ones, inspired by bee colonies is the Artificial Bee Colony (ABC) algorithm, simulates the foraging behavior of honeybees for optimization problems using "employed," "onlooker," and "scout" bee roles. 
-
-Dervis Karaboga Karaboga introduced the ABC algorithm in 2005 for solving multidimensional and multimodal optimization problems. His work modeled the foraging behaviors of honey bees and formed the foundation of the technique. [10](https://www.sciencedirect.com/science/article/abs/pii/S0096300309002860) [11](https://www.sciencedirect.com/topics/computer-science/artificial-bee-colony-algorithm) [12](https://www.scirp.org/reference/referencespapers?referenceid=1120056) [13](https://abc.erciyes.edu.tr/pub/tr06_2005.pdf)
+#### 2.2.1 Bees Algorithm (BA)
 
 Other algorithms, such as the Bees Algorithm (BA), also mimic honeybee foraging; while variations in natural swarming behavior exist between bee species like Apis cerana and Apis mellifera (successive swarming or preferred nest site size), most artificial algorithms are based on the general honeybee foraging and decision-making model.
 
 The Bees Algorithm (BA) was proposed by Pham et al. in 2006, inspired by the honey bee foraging process. It simulates how scout bees explore for food sources, and how foragers exploit promising sites based on a "waggle dance" recruitment system. [14](https://rais.education/wp-content/uploads/0573.pdf) [15](https://www.sciencedirect.com/science/article/abs/pii/S0096300309010078) [16](https://www.researchgate.net/publication/259383112_Honey_Bees_Inspired_Optimization_Method_The_Bees_Algorithm) [17](https://www.researchgate.net/publication/259383112_Honey_Bees_Inspired_Optimization_Method_The_Bees_Algorithm) [18](https://www.researchgate.net/publication/220116133_New_inspirations_in_swarm_intelligence_A_survey)
 [19](https://www.sciencedirect.com/science/article/abs/pii/S0096300309002860) 
 
-#### 2.2.1 The Relationship Between Bee Biology and Swarm Algorithms
+#### 2.2.2 Artificial Bee Colony (ABC) algorithm and the Bee Colony Optimization (BCO)
 
 The most widely adopted algorithms are directly inspired by the general honeybee colony (primarily Apis mellifera) model of foraging behavior and are structured around three distinct roles:
 
@@ -74,15 +73,34 @@ The most widely adopted algorithms are directly inspired by the general honeybee
 | Recruiter/Dancer | Onlooker Bee | Exploitation: Waits in the "hive" (the search memory) and chooses a food source to exploit based on the information (fitness/nectar amount) shared by the employed bees. Better solutions have a higher probability of being chosen. |
 | Scout Forager | Scout Bee | Exploration/Diversification: Randomly searches for entirely new food sources (randomly generated solutions) in the search space. An employed bee becomes a scout if its current food source cannot be improved after a set number of trials (the "limit"). |
 
-#### 2.2.1.1 Species-Specific Swarming Behavior vs. Algorithms
+The BCA is a prominent variant of BCO and was proposed in 2005 by Dervis Karaboga, a professor at Erciyes University in Turkey. He detailed the algorithm in a technical report for his work on optimizing numerical problems. https://scholar.google.com/citations?user=aC77_cUAAAAJ&hl=en http://www.scholarpedia.org/article/Artificial_bee_colony_algorithm 
 
-The search results highlight that biological honeybee species, like the Western Honeybee (Apis mellifera) and the Eastern/Asian Honeybee (Apis cerana), exhibit fundamental differences in their colony life cycle and behavior. However, these specific natural variations are generally not the basis for distinct computational swarm algorithms.
+The main difference is that Bee Colony Optimization (BCO) is a broader term for algorithms inspired by bee foraging, while the Artificial Bee Colony (ABC) algorithm is a specific, well-defined implementation with a clear division of labor among the bees. https://www.sciencedirect.com/topics/mathematics/bee-colony-optimization https://www.sciencedirect.com/topics/computer-science/artificial-bee-colony-algorithm http://www.scholarpedia.org/article/Artificial_bee_colony_algorithm
 
-| Bee Species Characteristic | Implication for Swarm Algorithms |
-|---|---|
-| High Swarming Frequency (Apis cerana) | A. cerana swarms (colony division) much more frequently than A. mellifera (up to 6-8 times a year, compared to 1-2). |
-| Swarming Triggers (Apis mellifera) | Models show A. mellifera swarming is triggered by factors like reaching "replacement stability" (queen's maximal egg-laying capacity), which results in congestion and an excess of nurse bees. |
-| Foraging Differences (A. cerana vs. A. mellifera) | A. cerana forages in less favorable conditions (fog, low temperature) and visits more flowers, while A. mellifera carries larger pollen loads. |
+The core of bee-inspired swarm algorithms, like the Artificial Bee Colony (ABC) algorithm and the Bees Algorithm (BA), is based on the highly efficient foraging and recruitment behavior of the Western Honeybee (Apis mellifera), particularly its sophisticated waggle dance communication. 
+
+Bee Colony Optimization (BCO) variations simulate the foraging behavior of honeybees for optimization problems using "employed," "onlooker," and "scout" bee roles. 
+
+While there are many variants of these algorithms, the variations are almost always aimed at improving the algorithmic performance ( balancing exploration vs. exploitation), rather than modeling the subtle behavioral differences between specific bee species.
+
+The foraging behavior of honeybees is a decentralized and efficient system. Bees are divided into three groups:
+
+Employed bees: These bees are associated with a specific food source and share information about it (distance, direction, and quality) with other bees in the hive.
+
+Onlooker bees: These bees wait in the hive and decide which food source to exploit based on the information shared by the employed bees. They tend to choose richer sources.
+
+Scout bees: When a food source is exhausted, its employed bee becomes a scout and begins searching randomly for a new food source.
+
+This division of labor and information sharing creates a robust and adaptive search mechanism, which Karaboga brilliantly translated into an optimization algorithm.
+
+| Phase / Concept | ASCII Representation | LaTeX Representation |
+| :--- | :--- | :--- |
+| **Employed Bee Phase**<br>(New Solution Generation) | `v_ij = x_ij + phi_ij * (x_ij - x_kj)` | $$v_{ij} = x_{ij} + \phi_{ij} (x_{ij} - x_{kj})$$ |
+| **Onlooker Bee Phase**<br>(Probabilistic Selection) | `P_i = fit_i / sum(fit_n for n=1 to SN)` | $$P_i = \frac{\text{fit}_i}{\sum_{n=1}^{SN} \text{fit}_n}$$ |
+| **Scout Bee Phase**<br>(Random Search) | `x_ij = x_min_j + rand(0,1) * (x_max_j - x_min_j)` | $$x_{ij} = x_{\min,j} + \text{rand}(0,1) (x_{\max,j} - x_{\min,j})$$ | http://www.scholarpedia.org/article/Artificial_bee_colony_algorithm  (https://fmin.xyz/docs/methods/zom/bee_algorithm.html) https://medium.com/@ankugahlyan/understanding-artificial-bee-colony-abc-algorithm-using-numeral-example-c9c14beaa9dc https://www.researchgate.net/publication/250305645_Artificial_bee_colony_algorithm_A_survey https://www.mdpi.com/2227-7390/7/3/289 https://algorithmafternoon.com/swarm/artificial_bee_colony/
+
+Dervis Karaboga Karaboga introduced the ABC algorithm in 2005 for solving multidimensional and multimodal optimization problems. His work modeled the foraging behaviors of honey bees and formed the foundation of the technique. [10](https://www.sciencedirect.com/science/article/abs/pii/S0096300309002860) [11](https://www.sciencedirect.com/topics/computer-science/artificial-bee-colony-algorithm) [12](https://www.scirp.org/reference/referencespapers?referenceid=1120056) [13](https://abc.erciyes.edu.tr/pub/tr06_2005.pdf)
+
 
 #### 2.2.2 Algorithmic Variants Focus on Performance, Not Biology
    
@@ -231,7 +249,7 @@ There isn't a standard optimization formula like in the termite algorithm. Inste
 
 Let a bee be at a position $(x, y)$ on a grid. Let $N(x, y)$ be the set of neighboring grid points. The decision to place a wax unit $W$ at $(x, y)$ is a function of the existing wax structures in the neighborhood.
 
-**1. Condition for Adding a Wall**
+ Condition for Adding a Wall
 
 A bee will place a wax unit $W$ at position $(x, y)$ if doing so advances the construction of a hexagonal cell. This can be described as a condition $C$:
 
@@ -239,14 +257,13 @@ $$C(x, y) = \text{true if } \exists (x_i, y_i), (x_j, y_j) \in N(x, y) \text{ su
 
 This states that a wall is built at $(x, y)$ if it connects to at least two existing wall segments in its neighborhood.
 
-**2. Angle Rule for Wall Placement**
+Angle Rule for Wall Placement
 
 The crucial part is the orientation of the new wall. The new wax unit $W_{\text{new}}$ must be placed such that the angle between the existing walls and the new wall is approximately the characteristic angle of a hexagon. Let $\vec{v_i}$ and $\vec{v_j}$ be vectors representing the orientation of the existing adjacent walls. The vector for the new wall, $\vec{v_{\text{new}}}$, should satisfy:
 
 $$\theta(\vec{v_{\text{new}}}, \vec{v_i}) \approx 120^{\circ} \quad \text{and} \quad \theta(\vec{v_{\text{new}}}, \vec{v_j}) \approx 120^{\circ}$$
 
 Where $\theta(\vec{a}, \vec{b})$ is the angle between two vectors. This rule, applied locally and repeatedly by many bees, is what ensures the emergence of the globally perfect and efficient honeycomb structure.
-
 
 ## References
 
