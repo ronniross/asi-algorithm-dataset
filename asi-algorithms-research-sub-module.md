@@ -205,14 +205,14 @@ This model simulates how bees build a honeycomb. The marvel of the honeycomb is 
 **Building Rule:** A bee will add wax to a growing cell wall in a way that attempts to complete a hexagon. Essentially, when starting a new cell next to an existing one, the bee builds a new wall at the characteristic 120° angle from the existing walls.
 **Chain Reaction:** As bees complete individual cells, they create the foundation for new cells. The process continues outwards, with each new hexagon being a perfect fit for its neighbors.
 
-##### 2.2.5.2 **ASCII Representation**
+##### 2.2.5.2 HExagonal Grid.
 
 Here is a simplified visual representation of the process on a hexagonal grid. We'll use `_` and `\` and `/` to represent cell walls.
 
 Initial State: A Single Cell
 Construction starts with one or a few cells.
 
-```ascii
+```
     __
    /  \
    \__/
@@ -221,7 +221,7 @@ Construction starts with one or a few cells.
 Intermediate State: Adding New Cells
 Bees add new cells adjacent to the first one, following the 120° angle rule, which naturally extends the hexagonal pattern.
 
-```ascii
+```
       __
      /  \__
      \__/  \
@@ -232,7 +232,7 @@ Bees add new cells adjacent to the first one, following the 120° angle rule, wh
 Final State: Emergent Honeycomb Structure
 As more bees work simultaneously, the regular, interlocking honeycomb structure emerges across the grid.
 
-```ascii
+```
       __    __
      /  \__/  \
      \__/  \__/
@@ -242,28 +242,35 @@ As more bees work simultaneously, the regular, interlocking honeycomb structure 
      \__/  \__/
 ```
 
-##### 2.2.5.3 LaTeX Mathematical Formulation**
+##### 2.2.5.3  Mathematical Formulations
 
 There isn't a standard optimization formula like in the termite algorithm. Instead, the model is based on rules and geometric principles. We can express the core building rule logically.
 
 Let a bee be at a position $(x, y)$ on a grid. Let $N(x, y)$ be the set of neighboring grid points. The decision to place a wax unit $W$ at $(x, y)$ is a function of the existing wax structures in the neighborhood.
 
- Condition for Adding a Wall
-
-A bee will place a wax unit $W$ at position $(x, y)$ if doing so advances the construction of a hexagonal cell. This can be described as a condition $C$:
+About the **Condition for Adding a Wall**, A bee will place a wax unit $W$ at position $(x, y)$ if doing so advances the construction of a hexagonal cell. This can be described as a condition $C$:
 
 $$C(x, y) = \text{true if } \exists (x_i, y_i), (x_j, y_j) \in N(x, y) \text{ such that } W(x_i, y_i) \text{ and } W(x_j, y_j) \text{ exist.}$$
 
+In Raw ASCII:
+
+```
+C(x, y) = true if there exists (x_i, y_i), (x_j, y_j) in N(x, y) such that W(x_i, y_i) and W(x_j, y_j) exist.
+```
+
 This states that a wall is built at $(x, y)$ if it connects to at least two existing wall segments in its neighborhood.
 
-Angle Rule for Wall Placement
-
-The crucial part is the orientation of the new wall. The new wax unit $W_{\text{new}}$ must be placed such that the angle between the existing walls and the new wall is approximately the characteristic angle of a hexagon. Let $\vec{v_i}$ and $\vec{v_j}$ be vectors representing the orientation of the existing adjacent walls. The vector for the new wall, $\vec{v_{\text{new}}}$, should satisfy:
+About the **Angle Rule for Wall Placement**, The crucial part is the orientation of the new wall. The new wax unit $W_{\text{new}}$ must be placed such that the angle between the existing walls and the new wall is approximately the characteristic angle of a hexagon. Let $\vec{v_i}$ and $\vec{v_j}$ be vectors representing the orientation of the existing adjacent walls. The vector for the new wall, $\vec{v_{\text{new}}}$, should satisfy:
 
 $$\theta(\vec{v_{\text{new}}}, \vec{v_i}) \approx 120^{\circ} \quad \text{and} \quad \theta(\vec{v_{\text{new}}}, \vec{v_j}) \approx 120^{\circ}$$
 
 Where $\theta(\vec{a}, \vec{b})$ is the angle between two vectors. This rule, applied locally and repeatedly by many bees, is what ensures the emergence of the globally perfect and efficient honeycomb structure.
 
+In Raw ASCII:
+
+```
+theta(v_new, v_i) ~= 120 degrees and theta(v_new, v_j) ~= 120 degrees
+```
 
 #### 2.2.6 Honeybee Mating Optimization (HBMO)
 
