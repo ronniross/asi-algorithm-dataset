@@ -466,6 +466,11 @@ ASCII Representation:
 Offspring = alpha * Queen + (1 - alpha) * Drone
 ```
 
+#### 2.2.10 Swarm intelligent honeycomb nests
+
+##### 2.2.10.1 Planetary Honeycomb System
+
+
 ## References
 
 Sato, T., & Hagiwara, M. (1997). Bee system: A new approach to genetic algorithm. In Proceedings of the IEEE International Conference on Evolutionary Computation (pp. 642–647). IEEE.
